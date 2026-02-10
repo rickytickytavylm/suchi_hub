@@ -1,0 +1,90 @@
+{
+  "brand_name": "ТОЯМО",
+  "brand_sub": "СУШИ",
+  "subtitle": "Быстро • Вкусно",
+  "work_time": "Ежедневно 11:00 — 23:00",
+  "phone": "+7 989 025 44 33",
+  "address": "г. Краснодар, Космическая ул., 47/2",
+  "logo": "logo_sushi.jpg",
+  "hero": "3.jpg",
+
+  "meta": {
+    "title": "Тоямо Суши — доставка роллов",
+    "description": "Заказать доставку роллов, меню, контакты. Тоямо Суши — быстро и вкусно!",
+    "og_image": "og-preview.jpg"
+  },
+
+  "utm_defaults": {
+    "utm_source": "linkpage",
+    "utm_medium": "referral"
+  },
+
+  "links": [
+    {
+      "id": "order",
+      "title": "Заказать доставку",
+      "url": "https://www.toyamosushi.ru/",
+      "icon": "truck",
+      "isPrimary": true,
+      "group": "primary",
+      "order": 1,
+      "isEnabled": true,
+      "event": "click_order"
+    },
+    {
+      "id": "telegram",
+      "title": "Telegram",
+      "url": "https://web.telegram.org/a/#8496410386",
+      "icon": "telegram",
+      "group": "messenger",
+      "order": 3,
+      "isEnabled": true,
+      "event": "click_telegram"
+    },
+    {
+      "id": "vk",
+      "title": "ВКонтакте",
+      "url": "https://m.vk.ru/app54442343?t2fs=434fa5de8cc32e1786_3",
+      "icon": "vk",
+      "group": "messenger",
+      "order": 4,
+      "isEnabled": true,
+      "event": "click_vk"
+    },
+    {
+      "id": "max",
+      "title": "Max",
+      "url": "https://max.ru/u/f9LHodD0cOLYk4nxgXt5xzl6wCHdivjpM3W0yqSDqJs1KDuZ6wjuE4KIHNo",
+      "icon": "max_logo.jpg",
+      "group": "messenger",
+      "order": 5,
+      "isEnabled": true,
+      "event": "click_max"
+    },
+    {
+      "id": "call",
+      "title": "Позвонить",
+      "url": "tel:+79890254433",
+      "icon": "phone",
+      "group": "messenger",
+      "order": 6,
+      "isEnabled": true,
+      "event": "click_call"
+    },
+    {
+      "id": "maps",
+      "title": "Как нас найти",
+      "url": "https://yandex.ru/maps/-/example",
+      "icon": "map-pin",
+      "group": "util",
+      "order": 6,
+      "isEnabled": false,
+      "event": "click_maps"
+    }
+  ],
+
+  "analytics": {
+    "yandex_metrika_id": "",
+    "google_analytics_id": ""
+  }
+}

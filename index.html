@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Тоямо Суши — доставка роллов</title>
+  <meta name="description" content="Заказать доставку роллов, меню, контакты. Тоямо Суши — быстро и вкусно!">
+  <meta property="og:title" content="Тоямо Суши — доставка роллов">
+  <meta property="og:description" content="Заказать доставку роллов, меню, контакты">
+  <meta property="og:image" content="og-preview.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/jpeg" href="logo_sushi.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Prevent FOUT layout shift — lock hero text size */
+    .hero__title{font-size:clamp(2.6rem,11vw,4rem);font-weight:700;letter-spacing:.1em;line-height:.92}
+    .hero__sub{font-size:clamp(.68rem,2vw,.8rem);letter-spacing:.42em}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scene">
+
+  <!-- ====== HERO — 100vh poster ====== -->
+  <section class="hero">
+    <img src="3.jpg" alt="" class="hero__bg">
+    <div class="hero__overlay"></div>
+    <div class="hero__logo">
+      <img src="logo_sushi.jpg" alt="Тоямо Суши">
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">доставка роллов</p>
+      <h1 class="hero__title">ТОЯМО</h1>
+      <div class="hero__line" aria-hidden="true"></div>
+      <p class="hero__sub">СУШИ</p>
+      <p class="hero__tag">Ежедневно 11:00 — 23:00</p>
+    </div>
+    <a href="#actions" class="hero__arrow" aria-label="Перейти к действиям">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ====== ACTIONS — white section ====== -->
+  <section class="actions" id="actions">
+    <div class="actions__inner">
+
+      <div class="actions__brand reveal">
+        <img src="logo.jpg" alt="Тоямо Суши" class="actions__badge">
+      </div>
+
+      <div class="actions__head reveal">
+        <p class="actions__tagline" id="subtitle"></p>
+        <p class="actions__hours" id="workTime"></p>
+      </div>
+
+      <div class="actions__btns" id="primaryActions"></div>
+
+      <div class="actions__row" id="messengerActions"></div>
+
+      <div class="actions__links" id="utilActions"></div>
+
+      <footer class="actions__foot">
+        <p class="actions__info" id="footerAddress"></p>
+        <p class="actions__info" id="footerPhone"></p>
+        <p class="actions__fine">Нажимая кнопки, вы переходите в соответствующие сервисы</p>
+      </footer>
+
+    </div>
+  </section>
+
+  </div><!-- .scene -->
+
+  <script>
+    window.__INLINE_CONFIG__ = {
+      "brand_name":"ТОЯМО","brand_sub":"СУШИ",
+      "subtitle":"Быстро \u2022 Вкусно",
+      "work_time":"Ежедневно 11:00 — 23:00",
+      "phone":"+7 989 025 44 33","address":"г. Краснодар, Космическая ул., 47/2",
+      "logo":"logo_sushi.jpg","hero":"3.jpg",
+      "meta":{"title":"Тоямо Суши — доставка роллов","description":"Заказать доставку роллов, меню, контакты."},
+      "utm_defaults":{"utm_source":"linkpage","utm_medium":"referral"},
+      "links":[
+        {"id":"order","title":"Заказать доставку","url":"https://www.toyamosushi.ru/","icon":"truck","isPrimary":true,"group":"primary","order":1,"isEnabled":true,"event":"click_order"},
+        {"id":"telegram","title":"Telegram","url":"https://web.telegram.org/a/#8496410386","icon":"telegram","group":"messenger","order":3,"isEnabled":true,"event":"click_telegram"},
+        {"id":"vk","title":"ВКонтакте","url":"https://m.vk.ru/app54442343?t2fs=434fa5de8cc32e1786_3","icon":"vk","group":"messenger","order":4,"isEnabled":true,"event":"click_vk"},
+        {"id":"max","title":"Max","url":"https://max.ru/u/f9LHodD0cOLYk4nxgXt5xzl6wCHdivjpM3W0yqSDqJs1KDuZ6wjuE4KIHNo","icon":"max_logo.jpg","group":"messenger","order":5,"isEnabled":true,"event":"click_max"},
+        {"id":"call","title":"Позвонить","url":"tel:+79890254433","icon":"phone","group":"messenger","order":6,"isEnabled":true,"event":"click_call"},
+        {"id":"maps","title":"Как нас найти","url":"https://yandex.ru/maps/-/example","icon":"map-pin","group":"util","order":6,"isEnabled":false,"event":"click_maps"}
+      ],
+      "analytics":{"yandex_metrika_id":"","google_analytics_id":""}
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
