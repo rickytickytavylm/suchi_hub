@@ -2,7 +2,7 @@
   "brand_name": "ТОЯМО",
   "brand_sub": "СУШИ",
   "subtitle": "Быстро • Вкусно",
-  "work_time": "Ежедневно 11:00 — 23:00",
+  "work_time": "Ежедневно 10:00 — 22:00",
   "phone": "+7 989 025 44 33",
   "address": "г. Краснодар, Космическая ул., 47/2",
   "logo": "logo_sushi.jpg",
@@ -38,7 +38,7 @@
       "icon": "telegram",
       "group": "messenger",
       "order": 3,
-      "isEnabled": true,
+      "isEnabled": false,
       "event": "click_telegram"
     },
     {
@@ -58,7 +58,7 @@
       "icon": "max_logo.jpg",
       "group": "messenger",
       "order": 5,
-      "isEnabled": true,
+      "isEnabled": false,
       "event": "click_max"
     },
     {
