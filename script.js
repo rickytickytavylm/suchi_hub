@@ -55,12 +55,17 @@
     ls.forEach(l=>{(g[l.group||'primary']||(g.primary)).push(l)});
     const u=c.utm_defaults;
 
-    /* PRIMARY — clean text pills */
+    /* PRIMARY — unified buttons */
     const sBox=$('primaryActions');
     if(sBox) g.primary.forEach((l,i)=>{
       const url=addUtm(l.url,u);
-      const a=mkA(url, l.isPrimary?'cta rc':'ghost rc');
-      a.innerHTML='<span>'+esc(l.title)+'</span>';
+      const a=mkA(url,'btn rc');
+      a.dataset.id=l.id;
+      const isImg=l.icon&&/\.\w+$/.test(l.icon);
+      const icoHtml=isImg
+        ?'<span class="btn__ico"><img src="'+esc(l.icon)+'" alt="" class="btn__img"></span>'
+        :(SVG[l.icon]?'<span class="btn__ico">'+SVG[l.icon]+'</span>':'');
+      a.innerHTML=icoHtml+'<span>'+esc(l.title)+'</span>';
       a.style.transitionDelay=(i*.08)+'s';
       a.onclick=()=>track(l.event,{button:l.title,url});
       sBox.appendChild(a);

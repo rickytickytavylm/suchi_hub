@@ -4,7 +4,7 @@
   "subtitle": "Быстро • Вкусно",
   "work_time": "Ежедневно 10:00 — 22:00",
   "phone": "+7 989 025 44 33",
-  "address": "г. Краснодар, Космическая ул., 47/2",
+  "address": "Яблоновский, ул. Космическая 47/2",
   "logo": "logo_sushi.jpg",
   "hero": "3.jpg",
 
@@ -22,9 +22,9 @@
   "links": [
     {
       "id": "order",
-      "title": "Заказать доставку",
+      "title": "Заказать на сайте",
       "url": "https://www.toyamosushi.ru/",
-      "icon": "truck",
+      "icon": "logo_sushi.jpg",
       "isPrimary": true,
       "group": "primary",
       "order": 1,
@@ -32,54 +32,26 @@
       "event": "click_order"
     },
     {
-      "id": "telegram",
-      "title": "Telegram",
-      "url": "https://web.telegram.org/a/#8496410386",
-      "icon": "telegram",
-      "group": "messenger",
-      "order": 3,
-      "isEnabled": false,
-      "event": "click_telegram"
-    },
-    {
       "id": "vk",
-      "title": "ВКонтакте",
+      "title": "Заказать в VK",
       "url": "https://m.vk.ru/app54442343?t2fs=434fa5de8cc32e1786_3",
       "icon": "vk",
-      "group": "messenger",
-      "order": 4,
+      "isPrimary": true,
+      "group": "primary",
+      "order": 2,
       "isEnabled": true,
       "event": "click_vk"
     },
     {
-      "id": "max",
-      "title": "Max",
-      "url": "https://max.ru/u/f9LHodD0cOLYk4nxgXt5xzl6wCHdivjpM3W0yqSDqJs1KDuZ6wjuE4KIHNo",
-      "icon": "max_logo.jpg",
-      "group": "messenger",
-      "order": 5,
-      "isEnabled": false,
-      "event": "click_max"
-    },
-    {
       "id": "call",
-      "title": "Позвонить",
+      "title": "Заказать по телефону",
       "url": "tel:+79890254433",
       "icon": "phone",
-      "group": "messenger",
-      "order": 6,
+      "isPrimary": true,
+      "group": "primary",
+      "order": 3,
       "isEnabled": true,
       "event": "click_call"
-    },
-    {
-      "id": "maps",
-      "title": "Как нас найти",
-      "url": "https://yandex.ru/maps/-/example",
-      "icon": "map-pin",
-      "group": "util",
-      "order": 6,
-      "isEnabled": false,
-      "event": "click_maps"
     }
   ],
 

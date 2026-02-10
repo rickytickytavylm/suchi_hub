@@ -223,34 +223,41 @@ a{text-decoration:none;color:inherit;-webkit-tap-highlight-color:transparent}
   margin-top:6px;
 }
 
-/* Buttons — Blocky, Premium */
+/* Buttons — Three unified CTA */
 .actions__btns{
-  width:100%;display:flex;flex-direction:column;gap:8px;
-  margin-bottom:24px;
+  width:100%;display:flex;flex-direction:column;gap:10px;
+  margin-bottom:28px;
 }
 
-.cta{
-  display:flex;align-items:center;justify-content:space-between;
-  width:100%;padding:0 24px;height:64px;
-  border-radius:18px;
-  font-size:.92rem;font-weight:600;letter-spacing:.02em;
-  color:#fff;background:var(--ink);
-  cursor:pointer;transition:transform .15s;
+.btn{
+  display:flex;align-items:center;gap:12px;
+  width:100%;padding:0 22px;height:60px;
+  border-radius:16px;
+  font-size:.88rem;font-weight:600;letter-spacing:.01em;
+  color:#fff;
+  cursor:pointer;
+  transition:transform .15s,box-shadow .15s;
 }
-.cta::after{content:'→';font-family:system-ui;font-weight:400;opacity:.5}
-.cta:active{transform:scale(.98)}
+.btn:active{transform:scale(.98)}
+.btn:hover{box-shadow:0 4px 16px rgba(0,0,0,.12)}
 
-.ghost{
-  display:flex;align-items:center;justify-content:space-between;
-  width:100%;padding:0 24px;height:64px;
-  border-radius:18px;
-  font-size:.92rem;font-weight:600;letter-spacing:.02em;
-  color:var(--ink);background:var(--off);
-  cursor:pointer;transition:background .15s,transform .15s;
+.btn__ico{
+  width:22px;height:22px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  opacity:.7;
 }
-.ghost::after{content:'↗';font-family:system-ui;font-weight:400;opacity:.4}
-.ghost:hover{background:#ebeaea}
-.ghost:active{transform:scale(.98)}
+.btn__ico svg{width:20px;height:20px;stroke:#fff;stroke-width:1.8;fill:none}
+.btn__img{width:20px;height:auto;filter:invert(1) brightness(1.2);border-radius:3px}
+
+/* Order — dark */
+.btn[data-id="order"]{background:var(--ink)}
+
+/* VK — brand blue */
+.btn[data-id="vk"]{background:#0077ff}
+.btn[data-id="vk"] .btn__ico svg{fill:#fff;stroke:none}
+
+/* Phone — warm accent */
+.btn[data-id="call"]{background:var(--acc)}
 
 /* Messenger row — Unified Bar */
 .actions__row{
