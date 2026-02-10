@@ -50,7 +50,9 @@ a{text-decoration:none;color:inherit;-webkit-tap-highlight-color:transparent}
   height:100vh;
   height:100svh;
   overflow:hidden;
+  will-change:transform;          /* force GPU layer — prevents repaint on scroll */
 }
+.hero.locked{height:var(--h)}     /* JS sets --h once on load */
 
 .hero__bg{
   position:absolute;inset:0;

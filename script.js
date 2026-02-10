@@ -175,6 +175,14 @@
     },{passive:true});
   }
 
-  async function init(){try{render(await loadCfg());initArrow()}catch(e){console.error(e)}}
+  /* Lock hero height once — prevents mobile address bar resize jank */
+  function lockHero(){
+    const hero=document.querySelector('.hero');
+    if(!hero)return;
+    hero.style.setProperty('--h',window.innerHeight+'px');
+    hero.classList.add('locked');
+  }
+
+  async function init(){try{lockHero();render(await loadCfg());initArrow()}catch(e){console.error(e)}}
   document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
 })();
